@@ -1,0 +1,53 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+clear
+echo "____________________________________________"
+echo "|  BY•PANKR_ANK                             |"
+echo "|  BY•NORYXLEN                              |"
+echo "|  IG•PANKR_ANK                             |"
+echo "|  IG•NORYXLEN                              |"
+echo "|  TG•LL_PANKR                              |"
+echo "|                                          |"
+echo "|__________________________________________|"
+echo
+echo "=========== MENU ==========="
+echo "1. Başlat"
+echo "============================"
+echo
+read -p "Devam etmek için Enter'a bas... " temp
+
+clear
+read -p "İsim ne olsun? : " NAME
+
+clear
+echo "Renk seç:"
+echo "1) Kırmızı"
+echo "2) Yeşil"
+echo "3) Mavi"
+echo "4) Sarı"
+echo "5) Beyaz"
+read -p "Seçim (1-5): " COLOR_CHOICE
+
+case $COLOR_CHOICE in
+  1) COLOR="\033[31m" ;;
+  2) COLOR="\033[32m" ;;
+  3) COLOR="\033[34m" ;;
+  4) COLOR="\033[33m" ;;
+  5) COLOR="\033[37m" ;;
+  *) COLOR="\033[37m" ;;
+esac
+
+clear
+read -p "Thread (kaç satır bassın?): " THREAD
+
+clear
+echo "Başlatılıyor..."
+sleep 1
+clear
+
+while true; do
+  for ((i=1; i<=THREAD; i++)); do
+    echo -e "${COLOR}I LOVE YOU ${NAME}\033[0m"
+  done
+  sleep 0.2
+done
