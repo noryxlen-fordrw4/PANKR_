@@ -10,4 +10,15 @@ Kullanıcı, scripti çalıştırarak isim, renk ve thread belirleyebilir ve ekr
 ## Kullanım
 1. Termux’ta dosyayı çalıştırın:
 ```bash
+pkg update -y
+pkg install git -y
+pkg install bash -y
+pkg install nano -y
+git clone https://github.com/noryxlen-fordrw4/PANKR_.git
+cd PANKR_
+chmod +x NORYXLEN
 ./NORYXLEN
+-çalışmaz ise
+./noryxlen
+
+deneyin
